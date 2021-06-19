@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneratorActivivty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp" >
+
+            <ImageView
+                android:id="@+id/mainImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/generator" />
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="54dp"
+                android:layout_height="24dp"
+                android:layout_margin="16dp"
+                android:rotationX="-4"
+                android:rotationY="174"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/arrow"
+                tools:ignore="VectorDrawableCompat"
+                android:onClick="GoBackToCatalog"/>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/product_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Генератор"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_bold_italic"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="BYD F3"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="7300 ₽"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto_bold"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Описание"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Генератор на BYD F3"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginLeft="16dp" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/fields"
+            android:text="Купить в один клик"
+            app:backgroundTint="@color/red"
+            android:onClick="GoToStory"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/fields"
+            android:text="Добавить в корзину"
+            app:backgroundTint="@color/red"
+            android:layout_marginBottom="50dp"
+            android:onClick="GoToBucket"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

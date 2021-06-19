@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_denisa"
+
+
+            />
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold_italic"
+            android:gravity="center"
+            android:text="Добро пожаловать  !"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/skida_kolodki"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/top_prodazh"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Категории"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Трансмиссии"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:onClick="GoToTrans"
+
+
+                tools:ignore="OnClick" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Моторные масла"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:onClick="GoToOil"
+                tools:ignore="OnClick" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ходовые части"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:onClick="GoToWalkPart"
+                tools:ignore="OnClick" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Электрика"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:onClick="GoToElectric"
+                tools:ignore="OnClick" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Кузовные части"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:onClick="GoToBodyPart"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/go_to_catalog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/fields"
+            android:text="well"
+
+            android:onClick="GoToCatalog"
+
+
+            app:backgroundTint="@color/red"
+            tools:ignore="OnClick" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
